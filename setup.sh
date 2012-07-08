@@ -10,6 +10,18 @@ if [ -d /root/ ]; then
     sudo chown root /root/.vimrc
 fi
 
+# Copy files for root mac
+if [ -d /var/root/ ]; then
+    sudo cp bash/main.bashrc /var/root/.bashrc
+    sudo cp bash/root.bashrc_local /var/root/.bashrc_local
+    sudo cp bash/root.bash_aliases /var/root/.bash_aliases
+    sudo cp vim/user.vimrc /var/root/.vimrc
+    sudo chown root /var/root/.bashrc
+    sudo chown root /var/root/.bashrc_local
+    sudo chown root /var/root/.bash_aliases
+    sudo chown root /var/root/.vimrc
+fi
+
 # Copy files for jon
 if [ -d /home/jon/ ]; then
     cp bash/main.bashrc /home/jon/.bashrc
@@ -40,10 +52,10 @@ if [ -d /Users/jonjanzen/ ]; then
     cp bash/user.bashrc_local /Users/jonjanzen/.bashrc_local
     cp bash/user.bash_aliases /Users/jonjanzen/.bash_aliases
     cp vim/user.vimrc /Users/jonjanzen/.vimrc
-    sudo chown jon /Users/jonjanzen/.bashrc
-    sudo chown jon /Users/jonjanzen/.bashrc_local
-    sudo chown jon /Users/jonjanzen/.bash_aliases
-    sudo chown jon /Users/jonjanzen/.vimrc
+    sudo chown jonjanzen /Users/jonjanzen/.bashrc
+    sudo chown jonjanzen /Users/jonjanzen/.bashrc_local
+    sudo chown jonjanzen /Users/jonjanzen/.bash_aliases
+    sudo chown jonjanzen /Users/jonjanzen/.vimrc
 fi
 
 source ~/.bashrc
