@@ -12,3 +12,6 @@ set expandtab
 syntax on
 
 highlight Comment ctermfg=yellow
+
+
+set spell spelllang=en_us
