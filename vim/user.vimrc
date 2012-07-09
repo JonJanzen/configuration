@@ -1,4 +1,4 @@
-" seach settings
+" search settings
 set incsearch ignorecase hlsearch
 " Press space to clearsearch highlighting and any message already displayed.
 nnoremap <silent> <Space> :silent noh<Bar>echo<CR>
@@ -14,4 +14,6 @@ syntax on
 highlight Comment ctermfg=yellow
 
 
-set spell spelllang=en_us
+if has("spell")
+    map <F5> :set spell!<CR><Bar>:echo "Spell Check: " . strpart("OffOn", 3 * &spell, 3)<CR>
+endif
