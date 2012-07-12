@@ -34,6 +34,18 @@ if [ -d /home/jon/ ]; then
     sudo chown jon /home/jon/.vimrc
 fi
 
+# Copy files for testflight
+if [ -d /home/testflight/ ]; then
+    cp bash/main.bashrc /home/testflight/.bashrc
+    cp bash/user.bashrc_local /home/testflight/.bashrc_local
+    cp bash/user.bash_aliases /home/testflight/.bash_aliases
+    cp vim/user.vimrc /home/testflight/.vimrc
+    sudo chown testflight /home/testflight/.bashrc
+    sudo chown testflight /home/testflight/.bashrc_local
+    sudo chown testflight /home/testflight/.bash_aliases
+    sudo chown testflight /home/testflight/.vimrc
+fi
+
 # Copy files for jonjanzen
 if [ -d /home/jonjanzen/ ]; then
     cp bash/main.bashrc /home/jonjanzen/.bashrc
