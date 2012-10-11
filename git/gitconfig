@@ -1,0 +1,16 @@
+[user]
+	name = Jon Janzen
+	email = jonjanzen@me.com
+[alias]
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	d = difftool
+	m = mergetool
+[difftool]
+    cmd = vimdiff
+	prompt = false
+[diff]
+	tool = vimdiff
+[merge]
+	tool = vimdiff
+[mergetool]
+	prompt = false
