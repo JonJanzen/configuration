@@ -1,0 +1,7 @@
+alias ls='ls --color=auto'
+alias vi=vim
+alias exit='clear && exit'
+alias test='cd ~/testflight/web && ./manage.py test account area51 api application device notifications team testflight utils support marketplace feedback flightdeck sdk stickers live'
+alias unfuckbootstrap="launchctl list|grep UIKitApplication|awk '{print $3}'|xargs launchctl remove"
+alias tfactivate='source ~/code/virtualenvs/testflight/bin/activate'
+alias sdkactivate='source ~/code/virtualenvs/sdk/bin/activate'
