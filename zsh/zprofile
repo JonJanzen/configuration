@@ -1,4 +1,3 @@
-alias ls='ls --color=auto'
 alias vi=vim
 #alias exit='clear && exit'
 #alias test='cd ~/testflight/web && ./manage.py test account area51 api application device notifications team testflight utils support marketplace feedback flightdeck sdk stickers live'
