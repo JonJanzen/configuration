@@ -1,11 +1,13 @@
 for x in /root/ /var/root/ /home/jon/ /home/jonjanzen/ /Users/jonjanzen/; do
     if [[ -d $x ]]; then
-        if [[ ! -d $x.oh_my_zsh ]]; then
+        if [[ ! -d $x.oh-my-zsh ]]; then
             echo 'Getting oh my zsh'
-            sudo git clone git://github.com/robbyrussell/oh-my-zsh.git $x.oh_my_zsh;
+            sudo git clone git://github.com/robbyrussell/oh-my-zsh.git $x.oh-my-zsh;
         fi;
-        pushd $x.oh_my_zsh 
-        git pull
+        echo $x
+        pushd $x.oh-my-zsh 
+        sudo git checkout master
+        sudo git pull
         popd
         username=$(basename $x)
         sudo cp bash/main.bashrc $x.bashrc
@@ -35,7 +37,9 @@ for x in /root/ /var/root/ /home/jon/ /home/jonjanzen/ /Users/jonjanzen/; do
         sudo cp zsh/zshrc $x.zshrc
         sudo chown $username $x.zshrc
         sudo cp zsh/zprofile $x.zprofile
-        sudo chown $username $x.zshprofile
+        sudo chown $username $x.zprofile
+        sudo cp zsh/oh-my-zsh.sh $x"oh-my-zsh.sh"
+        sudo chown $username $x"oh-my-zsh.sh"
         # put everything else here
 
         # git

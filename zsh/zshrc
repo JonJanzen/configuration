@@ -31,6 +31,10 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git)
 
+export EDITOR=/usr/bin/vim
+
 source $ZSH/oh-my-zsh.sh
+
+source $HOME/.zprofile
 
 # Customize to your needs...
