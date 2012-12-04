@@ -13,6 +13,8 @@ syntax on
 
 highlight Comment ctermfg=yellow
 
+" Put a marker at line 80
+set colorcolumn=80
 
 if has("spell")
     map <F5> :set spell!<CR><Bar>:echo "Spell Check: " . strpart("OffOn", 3 * &spell, 3)<CR>
