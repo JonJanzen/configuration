@@ -4,3 +4,4 @@ alias vi=vim
 #alias unfuckbootstrap="launchctl list|grep UIKitApplication|awk '{print $3}'|xargs launchctl remove"
 alias tfactivate='source ~/code/virtualenvs/testflight/bin/activate'
 alias sdkactivate='source ~/code/virtualenvs/sdk/bin/activate'
+alias testactivate='source ~/code/virtualenvs/tests/bin/activate'
