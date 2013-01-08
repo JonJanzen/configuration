@@ -55,6 +55,8 @@ for x in /root/ /var/root/ /home/jon/ /home/jonjanzen/ /Users/jonjanzen/; do
         # vim
         sudo cp vim/vimrc $x.vimrc
         sudo chown $username $x.vimrc
+        sudo mkdir -p $x.vim/colors
+        sudo cp vim/colors/* $x.vim/colors
     fi;
 done
 
