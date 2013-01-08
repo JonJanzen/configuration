@@ -3,8 +3,7 @@ set incsearch ignorecase hlsearch
 " Press space to clearsearch highlighting and any message already displayed.
 nnoremap <silent> <Space> :silent noh<Bar>echo<CR>
 
-" Tab settings
-set shiftwidth=4 softtabstop=4
+" Tab settings set shiftwidth=4 softtabstop=4
 set tabstop=4
 set shiftwidth=4
 set expandtab
@@ -13,8 +12,9 @@ set expandtab
 set autoindent
 
 syntax on
-
-highlight Comment ctermfg=yellow
+set t_Co=256
+set background=dark
+colorscheme solarized
 
 " Put a marker at line 80
 set colorcolumn=80

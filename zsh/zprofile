@@ -5,3 +5,7 @@ alias vi=vim
 alias tfactivate='source ~/code/virtualenvs/testflight/bin/activate'
 alias sdkactivate='source ~/code/virtualenvs/sdk/bin/activate'
 alias testactivate='source ~/code/virtualenvs/tests/bin/activate'
+alias tfdeploy='~/code/testflight_deploy/bin/tfdeploy'
+alias tmux='TERM=rxvt-256color tmux'
+#alias grep='grep -n --color=auto'
+#alias ls='ls --color=auto'

@@ -29,6 +29,12 @@ for x in /root/ /var/root/ /home/jon/ /home/jonjanzen/ /Users/jonjanzen/; do
             sudo chown $username $x.bash_aliases
         fi;
 
+        # Xresources
+        sudo cp xresources/Xdefaults $x.Xdefaults
+
+        #dircolors
+        sudo cp dircolors/dircolors $x.dircolors
+
         # tmux
         sudo cp tmux/tmux.conf $x.tmux.conf
         sudo chown $username $x.tmux.conf
