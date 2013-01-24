@@ -22,3 +22,12 @@ set colorcolumn=80
 if has("spell")
     map <F5> :set spell!<CR><Bar>:echo "Spell Check: " . strpart("OffOn", 3 * &spell, 3)<CR>
 endif
+
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+
+:set tags=~/mytags/testflight
+
+let g:Powerline_symbols='fancy'
+:set encoding=utf8
+python from powerline.bindings.vim import source_plugin; source_plugin()
+:set laststatus=2

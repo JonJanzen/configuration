@@ -10,6 +10,10 @@ ZSH_THEME="robbyrussell"
 #ZSH_THEME="agnoster"
 ZSH_THEME="powerline"
 
+POWERLINE_RIGHT_A='$(pwd)'
+POWERLINE_RIGHT_B=''
+
+
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"

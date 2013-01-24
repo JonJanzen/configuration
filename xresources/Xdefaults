@@ -36,12 +36,18 @@ URxvt.lineSpace:            0
 !URxvt*font: xft:Menlo for Powerline:pixelsize=10
 !URxvt*boldFont: xft:Menlo for Powerline:pixelsize=10
 !URxvt*boldFont: xft:Menlo for Powerline:bold:pixelsize=10
-URxvt*font: xft:Monaco:pixelsize=9
-URxvt*boldFont: xft:Moncao:bold:size=9
+!URxvt*font: xft:Monaco:pixelsize=9
+!URxvt*boldFont: xft:Moncao:bold:size=9
 !URxvt*font: xft:Mensch for Powerline:size=7
 !URxvt*boldFont: xft:Mensch for Powerline:bold:size=7
 !URxvt*font: xft:Inconsolata-dz for Powerline:size=7
 !URxvt*boldFont: xft:Inconsolata-dz for Powerline:bold:size=7
+
+URxvt*font: xft:Monaco for Powerline:regular:size=7
+URxvt*imFont: xft:Monaco for Powerline:regular:size=7
+URxvt*boldFont: xft:Monaco for Powerline:bold:size=7
+URxvt*italicFont: xft:Monaco for Powerline:italic:size=7
+URxvt*boldItalicFont: xft:Monaco for Powerline:bold:italic:size=7
 
 ! Fix font space
 !URxvt*letterSpace: -1
