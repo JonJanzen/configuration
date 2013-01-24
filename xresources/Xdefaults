@@ -2,8 +2,8 @@
 ! Xft settings
 !-------------------------------------------------------------------------------
 
-Xft.dpi:                    96
-Xft.antialias:              false
+Xft.dpi:                    110
+Xft.antialias:              true
 Xft.rgba:                   rgb
 Xft.hinting:                true
 Xft.hintstyle:              hintslight
@@ -29,10 +29,19 @@ URxvt.lineSpace:            0
 
 ! Fonts
 !URxvt.font:                 -*-terminus-medium-r-normal-*-12-120-72-72-c-60-iso8859-1
-!URxvt*font: xft:Monospace:pixelsize=12
-!URxvt*boldFont: xft:Monospace:pixelsize=12
-URxvt*font: xft:terminus:pixelsize=13
-URxvt*boldFont: xft:terminus:bold:pixelsize=13
+!URxvt*font: xft:Monospace:size=12
+!URxvt*boldFont: xft:Monospace:size=12
+!URxvt*font: xft:terminus:size=13
+!URxvt*boldFont: xft:terminus:bold:size=13
+!URxvt*font: xft:Menlo for Powerline:pixelsize=10
+!URxvt*boldFont: xft:Menlo for Powerline:pixelsize=10
+!URxvt*boldFont: xft:Menlo for Powerline:bold:pixelsize=10
+URxvt*font: xft:Monaco:pixelsize=9
+URxvt*boldFont: xft:Moncao:bold:size=9
+!URxvt*font: xft:Mensch for Powerline:size=7
+!URxvt*boldFont: xft:Mensch for Powerline:bold:size=7
+!URxvt*font: xft:Inconsolata-dz for Powerline:size=7
+!URxvt*boldFont: xft:Inconsolata-dz for Powerline:bold:size=7
 
 ! Fix font space
 !URxvt*letterSpace: -1
