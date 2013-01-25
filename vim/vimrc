@@ -27,7 +27,7 @@ autocmd FileType python set omnifunc=pythoncomplete#Complete
 
 :set tags=~/mytags/testflight
 
-let g:Powerline_symbols='fancy'
+let g:Powerline_symbols='unicode'
 :set encoding=utf8
 python from powerline.bindings.vim import source_plugin; source_plugin()
 :set laststatus=2

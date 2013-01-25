@@ -10,9 +10,7 @@ ZSH_THEME="robbyrussell"
 #ZSH_THEME="agnoster"
 ZSH_THEME="powerline"
 
-POWERLINE_RIGHT_A='$(pwd)'
-POWERLINE_RIGHT_B=''
-
+POWERLINE_NO_BLANK_LINE=1
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -47,3 +45,4 @@ source $HOME/.zprofile
 # Customize to your needs...
 
 eval $(dircolors $HOME/.dircolors) 2>&1 > /dev/null
+export LC_ALL=en_US.UTF-8
