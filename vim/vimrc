@@ -1,33 +1,55 @@
-" search settings
-set incsearch ignorecase hlsearch
-" Press space to clearsearch highlighting and any message already displayed.
-nnoremap <silent> <Space> :silent noh<Bar>echo<CR>
-
-" Tab settings set shiftwidth=4 softtabstop=4
-set tabstop=4
-set shiftwidth=4
-set expandtab
-
-" Auto indent
-set autoindent
-
+" Pathogen
+call pathogen#infect()
+call pathogen#helptags()
+ 
+set nocompatible
+set statusline=%<\ %n:%f\ %m%r%y%=%-35.(line:\ %l\ of\ %L,\ col:\ %c%V\ (%P)%)
+filetype plugin indent on
+ 
 syntax on
-set t_Co=256
-set background=dark
-colorscheme solarized
-
-" Put a marker at line 80
-set colorcolumn=80
-
+set number
 if has("spell")
     map <F5> :set spell!<CR><Bar>:echo "Spell Check: " . strpart("OffOn", 3 * &spell, 3)<CR>
 endif
+set hlsearch
+set showmatch
+set incsearch
+set ignorecase
+set nowrap
+set autoindent
+set history=1000
+set expandtab
+set shiftwidth=4
+set tabstop=4
+set softtabstop=4
+nnoremap <silent> <Space> :silent noh<Bar>echo<CR>
+
+set t_Co=256
+set encoding=utf8 
+set colorcolumn=80
+colorscheme solarized
+
+" Nerdtree
+"autocmd vimenter * NERDTree
+let NERDTreeShowBookmarks=1
+let NERDTreeChDirMode=0
+let NERDTreeQuitOnOpen=1
+let NERDTreeMouseMode=2
+let NERDTreeShowHidden=1
+let NERDTreeIgnore=['\.pyc','\~$','\.swo$','\.swp$','\.git','\.hg','\.svn','\.bzr']
+let NERDTreeKeepTreeInNewTab=1
+let g:nerdtree_tabs_open_on_gui_startup=0
+ 
+
+" ctrlp
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+ 
+
+set background=dark
 
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 
 :set tags=~/mytags/testflight
-
 let g:Powerline_symbols='unicode'
-:set encoding=utf8
 python from powerline.bindings.vim import source_plugin; source_plugin()
 :set laststatus=2

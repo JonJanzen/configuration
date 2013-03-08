@@ -45,4 +45,3 @@ source $HOME/.zprofile
 # Customize to your needs...
 
 eval $(dircolors $HOME/.dircolors) 2>&1 > /dev/null
-export LC_ALL=en_US.UTF-8
