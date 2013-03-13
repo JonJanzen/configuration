@@ -45,3 +45,5 @@ source $HOME/.zprofile
 # Customize to your needs...
 
 eval $(dircolors $HOME/.dircolors) 2>&1 > /dev/null
+TERM=xterm-256color
+export TERM
