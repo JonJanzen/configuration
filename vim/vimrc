@@ -15,7 +15,6 @@ set hlsearch
 set showmatch
 set incsearch
 set ignorecase
-set nowrap
 set autoindent
 set history=1000
 set expandtab
