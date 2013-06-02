@@ -1,0 +1,4 @@
+colorscheme vibrantink
+"colorscheme Monokai-Refined
+
+call janus#add_mapping('tagbar', 'map', '<Leader>rt', ':TagbarOpen fj<CR>')
