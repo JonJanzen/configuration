@@ -2,3 +2,9 @@ colorscheme vibrantink
 "colorscheme Monokai-Refined
 
 call janus#add_mapping('tagbar', 'map', '<Leader>rt', ':TagbarOpen fj<CR>')
+call janus#add_mapping('tagbar', 'map', '<Leader>rq', ':TagbarClose<CR>')
+
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+
