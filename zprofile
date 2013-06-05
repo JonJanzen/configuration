@@ -22,3 +22,5 @@ alias ll='ls $LS_OPTIONS -lhF'
 alias l='ls $LS_OPTIONS -lAhF'
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+export EDITOR=vim
